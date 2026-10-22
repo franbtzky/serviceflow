@@ -1,0 +1,160 @@
+
+/* Tabelas */
+
+.clientes-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.clientes-tabela th {
+  padding: 16px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.clientes-tabela td {
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+  color: #334155;
+  overflow-wrap: anywhere;
+}
+
+.clientes-tabela tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* Botões das tabelas */
+
+.clientes-acoes {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.clientes-btn-editar,
+.clientes-btn-excluir {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.clientes-btn-editar {
+  background: #eff6ff;
+  color: #2563eb;
+  border: 1px solid #bfdbfe;
+}
+
+.clientes-btn-excluir {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.clientes-btn-editar:hover {
+  background: #dbeafe;
+}
+
+.clientes-btn-excluir:hover {
+  background: #fee2e2;
+}
+
+/* Formulário de clientes */
+
+.clientes-formulario {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.clientes-formulario label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+}
+
+.clientes-formulario input {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  color: #1e293b;
+  outline: none;
+}
+
+.clientes-formulario input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px #dbeafe;
+}
+
+.clientes-formulario-acoes {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Tablets */
+
+@media (max-width: 850px) {
+  .clientes-tabela th,
+  .clientes-tabela td {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .clientes-formulario {
+    gap: 16px;
+  }
+}
+
+/* Celulares */
+
+@media (max-width: 600px) {
+  .clientes-formulario {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .clientes-formulario-acoes {
+    flex-direction: column;
+  }
+
+  .clientes-formulario-acoes button {
+    width: 100%;
+  }
+
+  .clientes-tabela {
+    min-width: 560px;
+  }
+
+  .clientes-tabela th,
+  .clientes-tabela td {
+    padding: 11px 12px;
+    font-size: 13px;
+  }
+
+  .clientes-acoes {
+    gap: 6px;
+  }
+
+  .clientes-btn-editar,
+  .clientes-btn-excluir {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}

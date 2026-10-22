@@ -1,0 +1,38 @@
+
+# Credenciais e configurações locais
+.env
+.env.*
+!.env.example
+*.local
+
+# Dependências
+node_modules/
+
+# Arquivos gerados
+dist/
+dist-ssr/
+coverage/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Configurações locais de editores
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
